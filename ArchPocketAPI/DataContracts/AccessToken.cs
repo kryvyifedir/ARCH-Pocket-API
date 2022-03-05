@@ -1,23 +1,23 @@
 using System;
-using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace ArchPocketAPI.DataContracts
 {
-	[DataContract]
+	[JsonObjectAttribute]
     public sealed class AccessToken_Request
     {
-        [DataMember(Name = "consumer_key")]
+        [JsonPropertyAttribute("consumer_key")]
         public string ConsumerKey { get; set; }
-        [DataMember(Name = "code")]
+        [JsonPropertyAttribute("code")]
         public string RequestToken { get; set; }
     }
 
-	[DataContract]
+	[JsonObjectAttribute]
     public sealed class AccessToken_Response
     {
-        [DataMember(Name = "access_token")]
+        [JsonPropertyAttribute("access_token")]
         public string AccessToken { get; set; }
-        [DataMember(Name = "username")]
+        [JsonPropertyAttribute("username")]
         public string Username { get; set; }
     }
 
