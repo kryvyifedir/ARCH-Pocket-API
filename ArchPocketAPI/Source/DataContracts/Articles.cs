@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace ArchPocketAPI.DataContracts
+namespace ArchPocketAPI
 {
 	[JsonObjectAttribute]
 	public sealed class GetArticles_Request
@@ -111,9 +111,9 @@ namespace ArchPocketAPI.DataContracts
 	}
 
 	[JsonObjectAttribute]
-    public class PocketArticleView_Response
-    {
-        [JsonPropertyAttribute("article")]
-        public string ArticleHTML { get; set; }
-    }
+	public class PocketArticleView_Response
+	{
+		[JsonPropertyAttribute("article")]
+		public string ArticleHTML { get; set; }
+	}
 }
