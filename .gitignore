@@ -1,0 +1,6 @@
+.vscode
+ArchPocketAPI/bin
+ArchPocketAPI/obj
+ArchPocketAPI/archPocketApi.csproj
+ArchPocketAPI/Program.cs
+ArchPocketAPI/oldcode.txt
